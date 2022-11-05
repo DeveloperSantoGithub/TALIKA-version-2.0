@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background: radial-gradient(ellipse at bottom, #022227 25%, #000000 100%);
+  color: #fff;
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    background: radial-gradient(ellipse at bottom, #022227 30%, #000000 200%);
+  }
+}
+
+header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6vw;
+  font-weight: 600;
+  letter-spacing: 1.5vw;
+  background: url("https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg");
+  background-size: auto 200%;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-animation: shine 8s linear infinite;
+          animation: shine 8s linear infinite;
+}
+
+header span {
+  margin-top: 10rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header span:hover {
+  font-size: 8vw;
+  letter-spacing: 2vw;
+  cursor: cell;
+}
+
+@media screen and (max-width: 460px) {
+  header {
+    margin-top: 2rem;
+    font-size: 16vw;
+  }
+  header span:hover {
+    font-size: 16.5vw;
+  }
+}
+
+header,
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .dataInputSection,
+form .dataInputSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  background: #002a35;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 460px) {
+  header .dataInputSection,
+  form .dataInputSection {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+header input,
+form input {
+  width: 33vw;
+  height: 3rem;
+  color: #f0edde;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  text-align: left;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+@media screen and (max-width: 460px) {
+  header input,
+  form input {
+    width: 75vw;
+  }
+}
+
+header button.addTodo,
+form button.addTodo {
+  height: 3rem;
+  width: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f0edde;
+  font-size: 1.5rem;
+  background: #002630;
+  cursor: pointer;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header button.addTodo:hover,
+form button.addTodo:hover {
+  background: #003749;
+  color: #00151b;
+}
+
+.dataInfoTools {
+  width: 34.5vw;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dataInfoTools .dataFilterSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.dataInfoTools .dataFilterSection::after {
+  width: 2rem;
+  height: 1.5rem;
+  text-align: center;
+  content: '\25BC';
+  position: absolute;
+  color: #f0edde;
+  background: #0b7788;
+  border-radius: 0 15px 15px 0;
+  top: 0;
+  right: 0;
+  padding-top: 8px;
+  border-radius: 0 5px 5px 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dataInfoTools .dataFilterSection:hover::after {
+  background: #002530;
+  color: #f0edde;
+}
+
+.dataInfoTools .dataFilterSection .todoFilter {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #f0edde;
+  color: #00151b;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dataInfoTools .dataFilterSection .todoFilter:hover {
+  background: #00151b;
+  color: #f0edde;
+}
+
+@media screen and (max-width: 460px) {
+  .dataInfoTools .dataFilterSection {
+    width: 88vw;
+  }
+}
+
+.dataInfoTools .todoListCounter {
+  height: 2rem;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: #f0edde;
+  color: #00151b;
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dataInfoTools .todoListCounter:hover {
+  background: #00151b;
+  color: #f0edde;
+}
+
+.dataInfoTools .deleteAllTodosBtn {
+  width: 10rem;
+  height: 2rem;
+  margin-top: 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background: #f0edde;
+  border-radius: 5px;
+  color: #022227;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.dataInfoTools .deleteAllTodosBtn:hover {
+  color: #fff;
+  background: #ce3b0f;
+  border-radius: 2px;
+}
+
+.todoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.todoContainer .todoList {
+  min-width: 30vw;
+  list-style: none;
+}
+
+.todoContainer .todoList .todo {
+  height: 2.95rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  background: #002a35;
+  color: #f0edde;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.todoContainer .todoList .todo:first-child {
+  margin-top: 4rem;
+}
+
+.todoContainer .todoList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+}
+
+.todoContainer .todoList button {
+  width: 2.93rem;
+  height: 2.93rem;
+  color: #f0edde;
+  background: #003749;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 0.5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.todoContainer .todoList .completeBtn:hover {
+  background: #00ad09;
+}
+
+.todoContainer .todoList .editSaveBtn:hover {
+  background: #ffae00;
+}
+
+.todoContainer .todoList .deleteBtn:hover {
+  background: #ff4800;
+}
+
+.todoContainer .todoList .fa-trash,
+.todoContainer .todoList .fa-check,
+.todoContainer .todoList .fa-pen-to-square {
+  pointer-events: none;
+}
+
+.todoContainer .todoList .completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todoContainer .todoList .deleteAnimation {
+  -webkit-transform: translateY(8rem) rotate(30deg) scale(0.2);
+          transform: translateY(8rem) rotate(30deg) scale(0.2);
+  opacity: 0;
+}
+
+@media screen and (max-width: 460px) {
+  .todoContainer .todoList {
+    min-width: 95vw;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.backdropClose {
+  z-index: 0;
+  display: none;
+  visibility: hidden;
+}
+
+.popup {
+  width: 400px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(0, 46, 54, 0.623);
+  border-radius: 16px;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.popup h2,
+.popup p,
+.popup button {
+  margin: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+.popup h2 {
+  color: #d6671d;
+}
+
+.popup p {
+  color: #f0edde;
+  font-size: 1.2rem;
+}
+
+.popup .popupBtn {
+  width: 3.5rem;
+  height: 2rem;
+  background: #f0edde;
+  color: #022227;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.popup .popupBtn:hover {
+  background: #022227;
+  color: #f0edde;
+}
+
+.openPopup {
+  visibility: visible;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.dateTimeInfo {
+  width: 12vw;
+  height: 2rem;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00151b;
+  color: #f0edde;
+  font-family: 'Poppons', sans-serif;
+  font-weight: 600;
+  border-radius: 25px;
+}
+
+[contenteditable] {
+  outline: 1px solid #f0edde;
+}
+
+.github-corner:hover .octo-arm {
+  -webkit-animation: octocat-wave 560ms ease-in-out;
+          animation: octocat-wave 560ms ease-in-out;
+}
+
+@-webkit-keyframes octocat-wave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes octocat-wave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  80% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .github-corner .octo-arm {
+    -webkit-animation: octocat-wave 560ms ease-in-out;
+            animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+@-webkit-keyframes shine {
+  from {
+    background-position: center 0%;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: center 0%;
+  }
+  to {
+    background-position: center 200%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
