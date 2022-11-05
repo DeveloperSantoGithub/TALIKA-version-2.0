@@ -1,5 +1,5 @@
 # TALIKA-version-2.0
-## A Modern and Simple Todo App!!
+## A Modern and Simple Todo Web App!!
 # Todo List
 
 ### *Features*:
