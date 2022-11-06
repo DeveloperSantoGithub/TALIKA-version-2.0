@@ -2,7 +2,7 @@
 ## A Modern and Simple Todo Web App!!
 # Todo List
 
-- [LiveSite]
+- [LiveSite](https://talika.netlify.app/)
 
 ### *Features*:
 
