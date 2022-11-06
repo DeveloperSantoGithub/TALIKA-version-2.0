@@ -14,7 +14,7 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
   body {
     background: radial-gradient(ellipse at bottom, #022227 30%, #000000 200%);
   }
@@ -49,13 +49,59 @@ header span:hover {
   cursor: cell;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1450px) {
   header {
     margin-top: 2rem;
-    font-size: 16vw;
+    font-size: 8vw;
+  }
+  header span {
+    margin-top: 5rem;
   }
   header span:hover {
-    font-size: 16.5vw;
+    font-size: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    margin-top: 2rem;
+    font-size: 8vw;
+  }
+  header span:hover {
+    font-size: 10.5vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 2rem;
+    font-size: 10vw;
+  }
+  header span:hover {
+    font-size: 12.5vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    margin-top: 2rem;
+    font-size: 12vw;
+  }
+  header span:hover {
+    font-size: 14.5vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    margin-top: 2rem;
+    font-size: 17vw;
+  }
+  header span {
+    margin-top: 5rem;
+  }
+  header span:hover {
+    font-size: 17.5vw;
   }
 }
 
@@ -92,7 +138,7 @@ form .dataInputSection {
   border-radius: 25px;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
   header .dataInputSection,
   form .dataInputSection {
     margin-top: 2rem;
@@ -113,10 +159,45 @@ form input {
   outline: none;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1450px) {
+  header input,
+  form input {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header input,
+  form input {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header input,
+  form input {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header input,
+  form input {
+    width: 65vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
   header input,
   form input {
     width: 75vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header input,
+  form input {
+    width: 78vw;
   }
 }
 
@@ -195,6 +276,22 @@ form button.addTodo:hover {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 768px) {
+  .dataInfoTools .dataFilterSection::after {
+    width: 3vw;
+    height: 1.2rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools .dataFilterSection::after {
+    width: 4vw;
+    height: 1rem;
+    font-size: 0.6rem;
+  }
+}
+
 .dataInfoTools .dataFilterSection:hover::after {
   background: #002530;
   color: #f0edde;
@@ -226,9 +323,27 @@ form button.addTodo:hover {
   color: #f0edde;
 }
 
-@media screen and (max-width: 460px) {
-  .dataInfoTools .dataFilterSection {
-    width: 88vw;
+@media screen and (max-width: 768px) {
+  .dataInfoTools .dataFilterSection .todoFilter {
+    width: 22vw;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dataInfoTools .dataFilterSection .todoFilter {
+    width: 24vw;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools .dataFilterSection .todoFilter {
+    width: 27vw;
+    height: 1.5rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -256,6 +371,30 @@ form button.addTodo:hover {
 .dataInfoTools .todoListCounter:hover {
   background: #00151b;
   color: #f0edde;
+}
+
+@media screen and (max-width: 768px) {
+  .dataInfoTools .todoListCounter {
+    width: 22vw;
+    height: 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools .todoListCounter {
+    width: 24vw;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools .todoListCounter {
+    width: 27vw;
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
 }
 
 .dataInfoTools .deleteAllTodosBtn {
@@ -289,6 +428,66 @@ form button.addTodo:hover {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 768px) {
+  .dataInfoTools .deleteAllTodosBtn {
+    width: 22vw;
+    height: 1.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dataInfoTools .deleteAllTodosBtn {
+    width: 24vw;
+    height: 1.5rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools .deleteAllTodosBtn {
+    width: 27vw;
+    height: 1.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .dataInfoTools {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dataInfoTools {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dataInfoTools {
+    width: 57vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dataInfoTools {
+    width: 67vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dataInfoTools {
+    width: 77vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dataInfoTools {
+    width: 88vw;
+  }
+}
+
 .todoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,7 +507,7 @@ form button.addTodo:hover {
 
 .todoContainer .todoList .todo {
   height: 2.95rem;
-  margin-bottom: 1rem;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,31 +525,27 @@ form button.addTodo:hover {
 }
 
 .todoContainer .todoList .todo:first-child {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .todoContainer .todoList li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.8rem;
+  word-wrap: break-word;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 1rem;
+  /* wraps the links */
+  overflow-wrap: anywhere;
 }
 
 .todoContainer .todoList button {
-  width: 2.93rem;
-  height: 2.93rem;
+  width: 2.5rem;
+  height: 2.5rem;
   color: #f0edde;
   background: #003749;
   border: none;
@@ -360,6 +555,23 @@ form button.addTodo:hover {
   margin-right: 0.5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.todoContainer .todoList button:last-child {
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 500px) {
+  .todoContainer .todoList button {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0px;
+    margin-left: 3px;
+    font-size: 0.6rem;
+  }
+  .todoContainer .todoList button:last-child {
+    margin-right: 10px;
+  }
 }
 
 .todoContainer .todoList .completeBtn:hover {
@@ -391,9 +603,42 @@ form button.addTodo:hover {
   opacity: 0;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1450px) {
   .todoContainer .todoList {
-    min-width: 95vw;
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .todoContainer .todoList {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .todoContainer .todoList {
+    width: 53vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .todoContainer .todoList {
+    width: 63vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .todoContainer .todoList {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .todoContainer .todoList {
+    min-width: 90vw;
+  }
+  .todoContainer .todoList .todo:first-child {
+    margin-top: 2rem;
   }
 }
 
@@ -481,6 +726,13 @@ form button.addTodo:hover {
   color: #f0edde;
 }
 
+@media screen and (max-width: 500px) {
+  .popup {
+    width: 370px;
+    height: 200px;
+  }
+}
+
 .openPopup {
   visibility: visible;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -505,6 +757,55 @@ form button.addTodo:hover {
   font-family: 'Poppons', sans-serif;
   font-weight: 600;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 1450px) {
+  .dateTimeInfo {
+    width: 15vw;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .dateTimeInfo {
+    width: 20vw;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dateTimeInfo {
+    width: 20vw;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dateTimeInfo {
+    width: 25vw;
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dateTimeInfo {
+    width: 27vw;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dateTimeInfo {
+    width: 31vw;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dateTimeInfo {
+    min-width: 50vw;
+    font-size: 0.8rem;
+  }
 }
 
 [contenteditable] {

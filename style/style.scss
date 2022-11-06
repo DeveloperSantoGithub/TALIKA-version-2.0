@@ -15,7 +15,7 @@ body {
 	background: radial-gradient(ellipse at bottom, #022227 25%, #000000 100%);
 	color: #fff;
 
-	@media screen and (max-width: 460px) {
+	@media screen and (max-width: 500px) {
 		background: radial-gradient(ellipse at bottom, #022227 30%, #000000 200%);
 	}
 }
@@ -52,13 +52,56 @@ header {
 		}
 	}
 
-	@media screen and (max-width: 460px) {
+	@media screen and (max-width: 1450px) {
 		margin-top: 2rem;
-		font-size: 16vw;
+		font-size: 8vw;
+
+		span {
+			margin-top: 5rem;
+			&:hover {
+				font-size: 10.5vw;
+			}
+		}
+	}
+	@media screen and (max-width: 1200px) {
+		margin-top: 2rem;
+		font-size: 8vw;
 
 		span {
 			&:hover {
-				font-size: 16.5vw;
+				font-size: 10.5vw;
+			}
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		margin-top: 2rem;
+		font-size: 10vw;
+
+		span {
+			&:hover {
+				font-size: 12.5vw;
+			}
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		margin-top: 2rem;
+		font-size: 12vw;
+
+		span {
+			&:hover {
+				font-size: 14.5vw;
+			}
+		}
+	}
+
+	@media screen and (max-width: 500px) {
+		margin-top: 2rem;
+		font-size: 17vw;
+
+		span {
+			margin-top: 5rem;
+			&:hover {
+				font-size: 17.5vw;
 			}
 		}
 	}
@@ -81,7 +124,7 @@ form {
 		background: #002a35;
 		border-radius: 25px;
 
-		@media screen and (max-width: 460px) {
+		@media screen and (max-width: 500px) {
 			margin-top: 2rem;
 			font-size: 1.5rem;
 		}
@@ -101,8 +144,23 @@ form {
 
 		outline: none;
 
-		@media screen and (max-width: 460px) {
+		@media screen and (max-width: 1450px) {
+			width: 45vw;
+		}
+		@media screen and (max-width: 1200px) {
+			width: 49vw;
+		}
+		@media screen and (max-width: 1024px) {
+			width: 55vw;
+		}
+		@media screen and (max-width: 900px) {
+			width: 65vw;
+		}
+		@media screen and (max-width: 768px) {
 			width: 75vw;
+		}
+		@media screen and (max-width: 500px) {
+			width: 78vw;
 		}
 	}
 
@@ -162,6 +220,18 @@ form {
 			pointer-events: none;
 
 			transition: all 0.3s ease;
+
+			@media screen and (max-width: 768px) {
+				width: 3vw;
+				height: 1.2rem;
+				font-size: 0.6rem;
+			}
+
+			@media screen and (max-width: 500px) {
+				width: 4vw;
+				height: 1rem;
+				font-size: 0.6rem;
+			}
 		}
 		&:hover::after {
 			background: #002530;
@@ -195,10 +265,23 @@ form {
 				background: #00151b;
 				color: #f0edde;
 			}
-		}
 
-		@media screen and (max-width: 460px) {
-			width: 88vw;
+			@media screen and (max-width: 768px) {
+				width: 22vw;
+				height: 1.5rem;
+				font-size: 0.8rem;
+			}
+
+			@media screen and (max-width: 600px) {
+				width: 24vw;
+				height: 1.5rem;
+				font-size: 0.7rem;
+			}
+			@media screen and (max-width: 500px) {
+				width: 27vw;
+				height: 1.5rem;
+				font-size: 0.6rem;
+			}
 		}
 	}
 	.todoListCounter {
@@ -220,6 +303,22 @@ form {
 		&:hover {
 			background: #00151b;
 			color: #f0edde;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 22vw;
+			height: 1.6rem;
+			font-size: 0.9rem;
+		}
+		@media screen and (max-width: 500px) {
+			width: 24vw;
+			height: 1.5rem;
+			font-size: 0.7rem;
+		}
+		@media screen and (max-width: 500px) {
+			width: 27vw;
+			height: 1.5rem;
+			font-size: 0.6rem;
 		}
 	}
 
@@ -249,6 +348,41 @@ form {
 			background: #ce3b0f;
 			border-radius: 2px;
 		}
+
+		@media screen and (max-width: 768px) {
+			width: 22vw;
+			height: 1.6rem;
+			font-size: 0.8rem;
+		}
+		@media screen and (max-width: 600px) {
+			width: 24vw;
+			height: 1.5rem;
+			font-size: 0.7rem;
+		}
+		@media screen and (max-width: 500px) {
+			width: 27vw;
+			height: 1.5rem;
+			font-size: 0.6rem;
+		}
+	}
+
+	@media screen and (max-width: 1450px) {
+		width: 45vw;
+	}
+	@media screen and (max-width: 1200px) {
+		width: 49vw;
+	}
+	@media screen and (max-width: 1024px) {
+		width: 57vw;
+	}
+	@media screen and (max-width: 900px) {
+		width: 67vw;
+	}
+	@media screen and (max-width: 768px) {
+		width: 77vw;
+	}
+	@media screen and (max-width: 500px) {
+		width: 88vw;
 	}
 }
 
@@ -265,7 +399,7 @@ form {
 
 		.todo {
 			height: 2.95rem;
-			margin-bottom: 1rem;
+			margin: 1rem;
 
 			display: flex;
 			justify-content: space-between;
@@ -278,25 +412,27 @@ form {
 			transition: all 0.5s ease;
 		}
 		.todo:first-child {
-			margin-top: 4rem;
+			margin-top: 2rem;
 		}
 
 		li {
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
+			word-wrap: break-word;
+			flex-wrap: wrap;
 
-			font-size: 1.8rem;
+			font-size: 1rem;
 			font-family: 'Poppins', sans-serif;
 			font-weight: 500;
 
 			flex: 1;
 			padding: 1rem;
+
+			/* wraps the links */
+			overflow-wrap: anywhere;
 		}
 
 		button {
-			width: 2.93rem;
-			height: 2.93rem;
+			width: 2.5rem;
+			height: 2.5rem;
 
 			color: #f0edde;
 			background: #003749;
@@ -308,6 +444,23 @@ form {
 			margin-right: 0.5px;
 
 			transition: all 0.3s ease;
+
+			&:last-child {
+				margin-right: 4px;
+			}
+
+			@media screen and (max-width: 500px) {
+				width: 2rem;
+				height: 2rem;
+				margin-right: 0px;
+				margin-left: 3px;
+
+				font-size: 0.6rem;
+
+				&:last-child {
+					margin-right: 10px;
+				}
+			}
 		}
 		.completeBtn {
 			&:hover {
@@ -344,8 +497,27 @@ form {
 			opacity: 0;
 		}
 
-		@media screen and (max-width: 460px) {
-			min-width: 95vw;
+		@media screen and (max-width: 1450px) {
+			width: 45vw;
+		}
+		@media screen and (max-width: 1200px) {
+			width: 45vw;
+		}
+		@media screen and (max-width: 1024px) {
+			width: 53vw;
+		}
+		@media screen and (max-width: 900px) {
+			width: 63vw;
+		}
+		@media screen and (max-width: 768px) {
+			width: 70vw;
+		}
+
+		@media screen and (max-width: 500px) {
+			.todo:first-child {
+				margin-top: 2rem;
+			}
+			min-width: 90vw;
 		}
 	}
 }
@@ -423,6 +595,11 @@ form {
 			color: #f0edde;
 		}
 	}
+
+	@media screen and (max-width: 500px) {
+		width: 370px;
+		height: 200px;
+	}
 }
 
 .openPopup {
@@ -447,6 +624,36 @@ form {
 	font-weight: 600;
 
 	border-radius: 25px;
+
+	@media screen and (max-width: 1450px) {
+		width: 15vw;
+		font-size: 0.95rem;
+	}
+	@media screen and (max-width: 1200px) {
+		width: 20vw;
+		font-size: 0.95rem;
+	}
+	@media screen and (max-width: 1024px) {
+		width: 20vw;
+		font-size: 0.95rem;
+	}
+	@media screen and (max-width: 900px) {
+		width: 25vw;
+		font-size: 0.95rem;
+	}
+	@media screen and (max-width: 768px) {
+		width: 27vw;
+		font-size: 0.8rem;
+	}
+	@media screen and (max-width: 600px) {
+		width: 31vw;
+		font-size: 0.8rem;
+	}
+
+	@media screen and (max-width: 500px) {
+		min-width: 50vw;
+		font-size: 0.8rem;
+	}
 }
 
 [contenteditable] {
