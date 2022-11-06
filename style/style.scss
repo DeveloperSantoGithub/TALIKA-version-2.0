@@ -170,6 +170,7 @@ form {
 	button.addTodo {
 		height: 3rem;
 		width: 4rem;
+		user-select: none;
 
 		display: flex;
 		justify-content: center;
@@ -621,6 +622,7 @@ form {
 	justify-content: center;
 
 	background: #00151b;
+	user-select: none;
 
 	color: #f0edde;
 	font-family: 'Poppons', sans-serif;
